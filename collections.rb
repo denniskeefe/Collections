@@ -48,11 +48,11 @@ puts items_below.join(', ')
 puts "Items above 500"
 puts items_above.join(', ')
 
-puts "Print them in ascending order with a place marker"
+puts "Print numbers in ascending order with a place marker"
  sort_collection = collection.sort
  marker_collection = sort_collection.each_with_index {|item, i| puts [i, item].join(". ")}
 
-puts "Show sum of numbers between 600 and 700"
+puts "Show the sum of all numbers between 600 and 700"
 select_collection = collection.select { |number| number >= 600 && number <=700 }
 
 
